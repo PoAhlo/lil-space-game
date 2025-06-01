@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://crdd0toiboch7"]
+[gd_scene load_steps=2 format=3 uid="uid://crdd0toiboch7"]
+
+[ext_resource type="Texture2D" uid="uid://be4uhalspqtbk" path="res://assets/sprites/background_space.png" id="1_bixq6"]
 
 [node name="Main" type="Node"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(320, 240)
+texture = ExtResource("1_bixq6")
