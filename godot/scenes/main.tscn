@@ -1,9 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://crdd0toiboch7"]
+[gd_scene load_steps=3 format=3 uid="uid://crdd0toiboch7"]
 
 [ext_resource type="Texture2D" uid="uid://be4uhalspqtbk" path="res://assets/sprites/background_space.png" id="1_bixq6"]
+[ext_resource type="PackedScene" uid="uid://djexwvai30ua7" path="res://scenes/game/player/player.tscn" id="2_0wfyh"]
 
 [node name="Main" type="Node"]
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(320, 240)
 texture = ExtResource("1_bixq6")
+
+[node name="Player" parent="." instance=ExtResource("2_0wfyh")]
+position = Vector2(249, 225)
